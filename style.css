@@ -100,7 +100,7 @@ a{
 }
 .projects__cards{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
 	gap: 2em;
 	grid-auto-rows: minmax(400px,auto);
 }
