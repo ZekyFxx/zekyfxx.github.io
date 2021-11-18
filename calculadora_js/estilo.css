@@ -20,6 +20,7 @@ body{
 }
 
 .calculadora{
+	font-family: 'clock';
 	display: grid;
 	grid-template-columns: repeat(4, 75px);
 	grid-template-rows: 160px repeat(5, 75px);
@@ -30,6 +31,7 @@ body{
 }
 
 button{
+
 	cursor: pointer;
 	margin: 5px;
 	padding: 0;
