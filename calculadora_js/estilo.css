@@ -1,3 +1,8 @@
+@font-face{
+	src: url('alarm clock.ttf');
+	font-family: 'clock';
+}
+
 *{
 	color: #fff;
 }
@@ -45,6 +50,7 @@ button:focus{
 	grid-column: span 2;
 }
 .display{
+	font-family: 'clock';
 	grid-column: 1 / -1;
 	padding: 16px;
 	display: flex;
