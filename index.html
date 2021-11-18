@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<title>Portafolio - Sparklet</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
 		<div class="nav__links">
 			<a href="#" class="nav__link">Home</a>
 			<a href="#projects" class="nav__link">Projects</a>
+			<a href="#skills" class="nav__link">Skills</a>
 			<a href="#" class="nav__link">About me</a>
 		</div>
 		<div class="nav__btn">
@@ -20,26 +22,33 @@
 	</nav>
 
 	<section class="me">
-		<div class="me__text">
+		<div data-aos-duration="1500" data-aos="fade-right" class="me__text">
 			<h1>I'm Jesús Lozada, also known as Sparklet.</h1>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Reiciendis, tenetur.</p>
 			<button class="me__btn">See my info</button>			
 		</div>
 		
 		<div class="me__img">
-			<img src="img/dogefox.png" alt="me_img">
+<!-- 			<img src="img/dogefox.png" alt="me_img">
+ -->		</div>
+	</section>
+	<section class="about">
+		<h1 class="about__h1">About me</h1>
+		<div class="about__me">
+			<img class="about__me__img" src="img/yo.jpg" alt="">
+			<p class="about__me__paragraph">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Sunt non eaque ab inventore delectus officia praesentium sequi molestiae, culpa error.</p>
 		</div>
 	</section>
-
 	<section id="projects" class="projects">
 		<h1 class="projects__h1">Projects</h1>
-		<div class="projects__cards">
+		<div data-aos="fade-up" class="projects__cards">
 			<div class="projects__card">
 				<div class="projects__card__img">
 					<img src="img/calculadora.PNG" alt="">
 				</div>
 				<h1 class="projects__card__title">Calculadora (JavaScript)</h1>
 				<p class="projects__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab omnis culpa non perferendis cumque natus quia asperiores? Ipsam dicta, error vitae architecto blanditiis deleniti! Quis dolor tenetur, beatae consectetur?</p>
+				<button onclick="window.open('https://zekyfxx.github.io/calculadora_js/index.html')" class="projects__card__button">Ver proyecto</button>
 			</div>
 			<div class="projects__card">
 				<div class="projects__card__img">
@@ -47,6 +56,7 @@
 				</div>
 				<h1 class="projects__card__title">Title</h1>
 				<p class="projects__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab omnis culpa non perferendis cumque natus quia asperiores? Ipsam dicta, error vitae architecto blanditiis deleniti! Quis dolor tenetur, beatae consectetur?</p>
+				<button onclick="window.open('https://zekyfxx.github.io/calculadora_js/index.html')" class="projects__card__button">Ver proyecto</button>
 			</div>
 			<div class="projects__card">
 				<div class="projects__card__img">
@@ -54,6 +64,7 @@
 				</div>
 				<h1 class="projects__card__title">Title</h1>
 				<p class="projects__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab omnis culpa non perferendis cumque natus quia asperiores? Ipsam dicta, error vitae architecto blanditiis deleniti! Quis dolor tenetur, beatae consectetur?</p>
+				<button onclick="window.open('https://zekyfxx.github.io/calculadora_js/index.html')" class="projects__card__button">Ver proyecto</button>
 			</div>
 			<div class="projects__card">
 				<div class="projects__card__img">
@@ -61,9 +72,142 @@
 				</div>
 				<h1 class="projects__card__title">Title</h1>
 				<p class="projects__card__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab omnis culpa non perferendis cumque natus quia asperiores? Ipsam dicta, error vitae architecto blanditiis deleniti! Quis dolor tenetur, beatae consectetur?</p>
+				<button onclick="window.open('https://zekyfxx.github.io/calculadora_js/index.html')" class="projects__card__button">Ver proyecto</button>
 			</div>		
 		</div>
+	</section>
+	<section class="skills">
+		<h1 class="skills__h1">Skills</h1>
+		<h2 class="skills__h2">Web Development</h2>
+		<div class="skills__cards">
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />	
+				</div>
+				
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+
+			</div>
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+				</div>
+
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+		<h2 class="skills__h2">Backend Frameworks</h2>
+		<div class="skills__cards">
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<h2 class="skills__h2">JavaScript Frameworks</h2>
+		<div class="skills__cards">
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" />
+
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+			</div>
+			<div class="skills__cards__card">
+				<div class="skills__cards__card__img">
+					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original-wordmark.svg" />
+				</div>
+				<div class="skills__cards__card__info">
+					<div class="skills__cards__card__info__label">
+					Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Dolor quam possimus eum architecto excepturi, perferendis sunt recusandae eius nisi, culpa?					
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<h2 class="skills__h2">Desktop Development</h2>
 
 	</section>
+	<footer class="footer">
+		<p>&copy; Copyright 2021, Creado por Sparklet</p>
+	</footer>
+
 </body>
+<script type="text/javascript" src="js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
