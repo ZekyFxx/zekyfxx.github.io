@@ -267,6 +267,9 @@ a{
 		justify-self: center;
 		align-self: center;
 	}
+	.skills__h2{
+		width: 100%;
+	}
 	.skills__cards{
 		grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
 		grid-auto-rows: minmax(300px,500px);
