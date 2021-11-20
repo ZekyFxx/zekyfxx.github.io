@@ -166,8 +166,8 @@ a{
 }
 .skills{
 	height: 100%;
-	padding: 2em;
-	margin-bottom: 2em;
+	padding: 2rem;
+	margin-bottom: 4rem;
 }
 .skills__h1{
 	text-align: center;
@@ -248,12 +248,24 @@ a{
 	height: 20px;
 }
 .footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
-	height: 2rem;
-	padding: 1em;
+	height: 250;
+	padding: 3rem;
 	width: 100%;
 	text-align: center;
+	background: #000;
+}
+.footer__social{
+	padding: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+.footer__social i{
+	font-size: 40px;
+}
+.footer__social__link{
+	color: #fff;
 }
 @media (max-width:420px) {
 	.me{
