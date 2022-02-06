@@ -105,7 +105,7 @@ a{
 	padding: 1em;
 }
 .about__me{
-	width: 50%;
+	width: 60%;
 	display: flex;
 	flex-direction: row;
 	background: var(--card-color);
