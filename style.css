@@ -112,16 +112,19 @@ a{
 	padding: 2em;
 	border-radius: 32px;
 	color: var(--text-color);
+	transition: all ease 0.3s;
+}
+.about__me:hover{
 	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+	background: var(--text-color);
+	color: var(--card-color);
 }
 .about__me__img{
 	width: 30%;
-/*	border-radius: 50%;
-*/	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
-
+	border-radius: 100%;
 }
 .about__me__paragraph{
-	font-size: 20px;
+	font-size: 18px;
 	padding: 1em;
 }
 
