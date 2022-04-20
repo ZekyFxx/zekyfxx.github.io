@@ -119,9 +119,9 @@ a{
 	background: var(--text-color);
 	color: var(--card-color);
 }
-.about__me__img{
-	width: 30%;
-	border-radius: 100%;
+.about__me__img img{
+	width: 100%;
+	border-radius: 50%;
 }
 .about__me__paragraph{
 	font-size: 18px;
@@ -179,10 +179,11 @@ a{
 }
 .skills__cards{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px,0.5fr));
 	grid-auto-rows: minmax(300px,400px);
 	gap: 1em;
 	color: #000;
+	text-align: center;
 }
 .skills__cards__card{
 	display: flex;
@@ -213,11 +214,13 @@ a{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 1px solid #000;
-	background: #fff;
+	background: var(--card-color);
 	padding: 10px;
 	margin: 1em;
 	text-align: center;
+}
+.skills__cards__card__img i{
+	font-size: 100px;
 }
 .skills__cards__card__img img{
 	width: 70%;
