@@ -305,6 +305,9 @@ a{
 .footer__social__link{
 	color: #fff;
 }
+.mark{
+	color: var(--a-color);
+}
 @media (max-width:420px) {
 	.me{
 		grid-template-columns: repeat(1, 1fr);
