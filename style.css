@@ -3,7 +3,7 @@
 
 :root{
 	--text-color: #fff;
-	--a-color: #4717f6/*#0eaee3*/;
+	--a-color: #10e8cb/*#0eaee3*/;
 	--bg-color: #0e0b16;
 	--card-color: #000;
 }
@@ -66,10 +66,10 @@ a{
 	height: 100%;
 }
 .me__text h1{
-	font-size: 32px;
+	font-size: 4rem;
 }
 .me__text p{
-	font-size: 20px;
+	font-size: 2rem;
 }
 .me__btn{
 	background: var(--a-color);
@@ -90,14 +90,12 @@ a{
 	transition: all ease 0.3s;
 }
 .me__img img{
-	width: 300px;
-	border-radius: 50%;
-	margin: 0 auto;
+	width: 90%;
+	margin: auto;
 }
 
 .about{
 	height: 100vh;
-	padding: 1em;
 }
 .about__h1{
 	text-align: center;
@@ -110,6 +108,7 @@ a{
 	flex-direction: row;
 	background: var(--card-color);
 	padding: 2em;
+	margin: auto;
 	border-radius: 32px;
 	color: var(--text-color);
 	transition: all ease 0.3s;
