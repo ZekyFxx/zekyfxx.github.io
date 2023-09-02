@@ -48,6 +48,10 @@ a{
 	padding: 10px;
 	color: var(--text-color);
 	margin: auto;
+	transition: all 0.3s ease;
+}
+.nav__link:hover{
+	color: var(--a-color);
 }
 .nav__btn{
 	padding: 14px;
@@ -55,6 +59,10 @@ a{
 	color: var(--text-color);
 	box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
 	border-radius: 32px;
+}
+.nav__btn:hover{
+	background: none;
+	color: var(--text-color);
 }
 .me{
 	display: grid;
@@ -322,7 +330,7 @@ a{
 .mark{
 	color: var(--a-color);
 }
-@media (max-width:420px) {
+@media (max-width:600px) {
 	.nav{
 		flex-direction: row;
 		height: 100%;
