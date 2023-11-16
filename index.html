@@ -10,19 +10,20 @@
 	<title>Portafolio - Sparklet</title>
 </head>
 <body>
-	<nav class="nav">
-		<div class="nav__logo">Sparklet</div>
-			<div class="nav__links">
-				<a href="#about" class="nav__link">About me</a>
-				<a href="#projects" class="nav__link">Projects</a>
-				<a href="#skills" class="nav__link">Skills</a>
-				<a href="#contact" class="nav__link nav__btn">Contact</a>
+	<header>
+		<nav class="nav">
+			<div class="nav__logo">Sparklet</div>
+			<div class="nav__menu">
+				<button id="menu"><img src="img/menu.svg" alt="menu"></button>
 			</div>
-		<div class="nav__menu">
-			<img src="img/menu.svg" alt="menu">
-		</div>
-	</nav>
-
+				<div class="nav__links">
+					<a href="#about" class="nav__link">About me</a>
+					<a href="#projects" class="nav__link">Projects</a>
+					<a href="#skills" class="nav__link">Skills</a>
+					<a href="#contact" class="nav__link nav__btn">Contact</a>
+				</div>
+		</nav>
+	</header>
 	<section class="me">
 		<div data-aos-duration="1500" data-aos="fade-right" class="me__text">
 			<h1>I'm <font class="mark">Jesús Lozada</font>, also known as <font class="mark">Sparklet</font>.</h1>
@@ -286,6 +287,7 @@ me gusta crear aplicaciones, algoritmos, y resolver problemas.</p>
 
 </body>
 <script type="text/javascript" src="js/aos.js"></script>
+<script src="js/main.js"></script>
 <script>
   AOS.init();
 </script>
