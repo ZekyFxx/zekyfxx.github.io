@@ -27,21 +27,31 @@ a{
 .nav{
 	display: flex;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 	flex-wrap: nowrap;
+>>>>>>> e625b83 (Revert "some fixes and mobile first")
 	flex-direction: row;
 	height: 100%;
 	width: 100%;
 	justify-content: space-between;
+<<<<<<< HEAD
+	transition: all 0.3s ease;
+=======
 =======
 	align-items: center;
 	flex-direction: row;
 >>>>>>> e6bbccb (Revert "some fixes and mobile first")
+>>>>>>> e625b83 (Revert "some fixes and mobile first")
 	background: var(--card-color);
 	width: 100%;
 	height: 4em;
 	font-family: sans-serif;
 	padding: 1em;
 }
+<<<<<<< HEAD
+
+=======
 <<<<<<< HEAD
 @keyframes nav{
 	100%{
@@ -50,6 +60,7 @@ a{
 }
 =======
 >>>>>>> e6bbccb (Revert "some fixes and mobile first")
+>>>>>>> e625b83 (Revert "some fixes and mobile first")
 .nav__logo{
 	margin: 1rem;
 	font-size: 1rem;
@@ -365,7 +376,6 @@ a{
 	display: flex;
 }
 .nav.show{
-	animation: nav 3s normal;
 	flex-direction: column;
 
 }
