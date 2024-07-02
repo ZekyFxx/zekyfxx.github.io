@@ -82,7 +82,8 @@ p{
 	width: 400px;
 }
 .projects__card__img{
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 	border-radius: 20px;
 }
 .projects__card__title{
