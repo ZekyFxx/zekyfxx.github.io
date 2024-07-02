@@ -1,0 +1,155 @@
+@font-face{
+	font-family: Roboto-Mono;
+	src: url('../fonts/RobotoMono-Regular.ttf');
+	
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::selection{
+	background-color: #ccc5;
+}
+
+body{
+	background-color: #16161a;
+	font-family: 'Roboto-Mono', sans-serif;
+}
+h1,h2,h3,h4,h5{
+	color: #fffffe;
+}
+p{
+	color: #94a1b2;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+.header__title{
+	text-align: center;
+	order: 1;
+	margin: 1rem;
+	font-size: 3rem;
+}
+.header__subtitle{
+	height: 5px;
+	order: 2;
+}
+.header__img{
+	aspect-ratio: 1/1;
+	width: 100px;
+	border-radius: 100%;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	user-select: none;
+}
+
+.section-jobs{
+	height: 100%;
+	padding: 1rem;
+	background-color: #242629;
+}
+.section{
+	height: 100vh;
+	padding: 1rem;
+	background-color: #242629;
+}
+.section__title{
+	text-align: center;
+	font-size: 2rem;
+	margin: 1rem;
+}
+.projects{
+	margin-top: 2rem;
+	display: flex;
+	
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.projects__card{
+	text-align: center;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	padding: 1rem;
+	background-color: #010101;
+	width: 400px;
+}
+.projects__card__img{
+	width: 100%;
+	border-radius: 20px;
+}
+.projects__card__title{
+
+	margin: 1rem;
+	text-align: center;
+}
+.projects__card__used{
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.social-icons{
+	display: flex;
+	flex-direction: column;
+	
+	height: 20vh;
+	gap:2rem;
+	/*background-color: #16161a;*/
+}
+.social-icons__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.social-icons-black{
+	color: #ccc;
+
+}
+.sized{
+	font-size: 2rem;
+}
+.sized-img{
+	width: 3rem;
+}
+.color-btn{
+	color: #7f5af0;
+}
+.section__title-footer{
+	width: 100%;
+	font-size: 2rem;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+@media (min-width:700px){
+	.projects{
+		flex-direction: row;
+		gap: 1rem;
+	}
+	.projects__card{
+		width: 400px;
+
+	}
+	.sized{
+		font-size: 3rem;
+	}
+	.section{
+		height: 100vh;
+	}
+	.section-jobs{
+		height: 100%;
+	}
+	.social-icons{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}

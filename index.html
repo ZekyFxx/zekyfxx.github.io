@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Document</title>
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__title">Welcome to ZekyFx's website</h1>
+		<h2 id="element" class="header__subtitle"></h2>
+		<img class="header__img" src="img/user.jpg" alt="User Photo" title="Foto de perfil">
+	</header>
+	<section class="section-jobs">
+		<h1 class="section__title">My jobs</h1>
+		<div class="projects">
+			<div data-aos="zoom-in-up" class="projects__card">
+				<img class="projects__card__img" src="img/screenshot-rocks.svg" alt="">
+				<h1 class="projects__card__title">Forum with Laravel</h1>
+				<p>
+					Made with Laravel, Livewire, Tailwind<br><br>
+				</p>
+				<div class="projects__card__used">
+					<i class="devicon-laravel-original colored sized" title="Laravel"></i>
+					<i class="devicon-livewire-plain-wordmark colored sized" title="Livewire"></i>
+					<i class="devicon-tailwindcss-original colored sized" title="Tailwind CSS"></i>
+					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
+
+				</div>
+			</div>
+			<div data-aos="zoom-in-up" class="projects__card">
+				<img class="projects__card__img" src="img/screenshot-rocks (1).svg" alt="">
+				<h1 class="projects__card__title">UCP with Laravel</h1>
+				<p>Made with Laravel, Livewire, Tailwind<br><br></p>
+				<div class="projects__card__used">
+					<i class="devicon-laravel-original colored sized" title="Laravel"></i>
+					<i class="devicon-livewire-plain-wordmark colored sized" title="Livewire"></i>
+					<i class="devicon-tailwindcss-original colored sized" title="Tailwind CSS"></i>
+					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
+
+				</div>
+			</div>
+			<div data-aos="zoom-in-up" class="projects__card">
+				<img class="projects__card__img" src="img/bbtdm.svg" alt="">
+				<h1 class="projects__card__title">Black Bullet (SA-MP)</h1>
+				<p>Open MP server made with Pawn Language<br><br></p>
+				<div class="projects__card__used">
+					<img class="sized-img" src="img/pawn-svgrepo-com.svg" alt="Pawn Language">
+					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<h1 data-aos="flip-down" class="section__title-footer">Do you wanna leave me a message?</h1>
+		<div class="social-icons">
+			<div data-aos="fade-in" class="social-icons__content">
+				<h2>Telegram</h2>
+				<a class="social-icons-black" href="#">
+					<i style="font-size: 4rem;" class='bx bxl-telegram'></i>
+				</a>
+			</div>
+			<div data-aos="fade-in" class="social-icons__content">
+				<h2>Github</h2>
+				<a class="social-icons-black" href="#">
+					<i style="font-size: 4rem;" class='bx bxl-github'></i>
+				</a>
+			</div>
+			<div data-aos="fade-in" class="social-icons__content">
+				<h2>WhatsApp</h2>
+				<a class="social-icons-black" href="#">
+					<i style="font-size: 4rem;" class='bx bxl-whatsapp' undefined ></i>
+				</a>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="js/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<span class="color-btn">Web</span> developer',
+      	'<span class="color-btn">SA-MP</span> Programmer'],
+      typeSpeed: 30,
+      backSpeed: 20,
+      fadeOut: false,
+      loop:true
+    });
+  </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+</html>
