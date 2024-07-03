@@ -133,6 +133,19 @@ p{
 	justify-content: center;
 	gap: 1rem;
 }
+.projects__card__button{
+	display: block;
+	background-color: #7f5af0;
+	margin-top: 1rem;
+	padding: 1rem;
+	border:transparent;
+	border-radius: 20px;
+	cursor: pointer;
+	color: #fffffe;
+	font-size: 1rem;
+	text-decoration: none;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+}
 
 .social-icons{
 	display: flex;
@@ -161,6 +174,7 @@ p{
 }
 .sized-img-icon{
 	width: 2rem;
+	height: auto;
 }
 .color-btn{
 	color: #7f5af0;
@@ -202,6 +216,9 @@ p{
 	}
 	.sized{
 		font-size: 3rem;
+	}
+	.sized-img-icon{
+		width: 3rem;
 	}
 	.section{
 		height: 100vh;

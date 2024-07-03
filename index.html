@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="header">
-		<h1 class="header__title">Welcome to ZekyFx's website</h1>
+		<h1 id="header" class="header__title"></h1>
 		<h2 id="element" class="header__subtitle"></h2>
 		<img class="header__img" src="img/user.jpg" alt="User Photo" title="Foto de perfil">
 	</header>
@@ -20,13 +20,11 @@
 		<h1 class="section__title">About me</h1>
 		<div class="about__me__content">
 			<p data-aos="flip-right" class="section__p">
-			My name is <strong>Jesús Lozada</strong>, I'm from Venezuela, Caracas.<br>
-			I started in this world of programming seven years ago (2017), making sa-mp servers and learning pawn language derived from c++,
-			then since 2021 i'm fully insterested in web development, so i decided to learn HTML, CSS, JavaScript and some PHP.<br>
-			I'm still programming and learning about because i love this.<br>
-			<br>
-
-			
+				My name is <strong>Jesús Lozada</strong>, I'm from Caracas, Venezuela.<br>
+				I started in this world of programming seven years ago (2017), making SA-MP servers and learning the pawn language derived from C++,
+				then since 2021 i'm fully insterested in web development, so I decided to learn HTML, CSS, JavaScript and some PHP.<br>
+				I'm still programming and learning about it, because i love this.<br>
+				<br>
 			</p>
 
 			<img data-aos="zoom-in" src="img/aboutme.jpg" class="about__me__img" alt="My personal photo" title="Real Photo">			
@@ -37,27 +35,25 @@
 	<section class="section-alt">
 		<h1 class="section__title">Extra Info & Skills</h1>
 		<div class="about__me__extra">
-			<span>Gender: Male 👨‍</span>
+			<span><strong>Age:</strong> 1️⃣8️⃣</span>
 			<br>
-			<span>Age: 1️⃣8️⃣</span>
+			<span><strong>Location:</strong> Venezuela 🇻🇪</span>
 			<br>
-			<span>Location: Venezuela 🇻🇪</span>
+			<span><strong>Hobby:</strong> Basketball🏀</span>
 			<br>
-			<span>Favorite Sport: Basketball🏀</span>
+			<h2>Skills:</h2>
 			<br>
-			<span data-aos="flip-right" class="sized" style="color:#fff">Skills:
-				<br>
-				<br>
+			<span data-aos="flip-right" class="sized" style="color:#fff">
 				<i class="tooltip devicon-html5-plain colored">
 					<span class="tooltiptext">HTML</span>
 				</i>
 
-	        	<i class="tooltip devicon-css3-plain colored">
-	        		<span class="tooltiptext">CSS</span>
-	        	</i>
-	      		<i class="tooltip devicon-javascript-plain colored">
-	      			<span class="tooltiptext">JavaScript</span>
-	      		</i>
+				<i class="tooltip devicon-css3-plain colored">
+					<span class="tooltiptext">CSS</span>
+				</i>
+				<i class="tooltip devicon-javascript-plain colored">
+					<span class="tooltiptext">JavaScript</span>
+				</i>
 
 				<i class="tooltip devicon-laravel-original colored" title="Laravel">
 					<span class="tooltiptext">Laravel</span>
@@ -89,6 +85,7 @@
 					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
 
 				</div>
+				<a href="#" class="projects__card__button">Take a look in GitHub</a>
 			</div>
 			<div data-aos="zoom-in-up" class="projects__card">
 				<img class="projects__card__img" src="img/screenshot-rocks (1).svg" alt="">
@@ -101,6 +98,7 @@
 					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
 
 				</div>
+				<a href="#" class="projects__card__button">Take a look in GitHub</a>
 			</div>
 			<div data-aos="zoom-in-up" class="projects__card">
 				<img class="projects__card__img" src="img/bbtdm.svg" alt="">
@@ -110,11 +108,15 @@
 					<img class="sized-img" src="img/pawn-svgrepo-com.svg" alt="Pawn Language">
 					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
 				</div>
+				<a href="#" class="projects__card__button">Take a look in GitHub</a>
 			</div>
 		</div>
 	</section>
 	<section class="footer">
-		<h1 data-aos="flip-down" class="section__title-footer">Do you wanna leave me a message?</h1>
+		<h1 data-aos="flip-down" class="section__title-footer">
+		Do you <span class="color-btn">like</span> what you see?
+		</h1>
+		<h2 data-aos="flip-down">Send me a <span class="color-btn">message</span></h2>
 		<div class="social-icons">
 			<div data-aos="fade-in" class="social-icons__content">
 				<h2>Telegram</h2>
@@ -123,9 +125,9 @@
 				</a>
 			</div>
 			<div data-aos="fade-in" class="social-icons__content">
-				<h2>Github</h2>
-				<a class="social-icons-black" href="#">
-					<i style="font-size: 4rem;" class='bx bxl-github'></i>
+				<h2>Gmail</h2>
+				<a class="social-icons-black" href="mailto:lanjhonier@gmail.com">
+					<i style="font-size: 4rem;" class='bx bxl-gmail'></i>
 				</a>
 			</div>
 			<div data-aos="fade-in" class="social-icons__content">
@@ -138,19 +140,25 @@
 	</section>
 </body>
 <script src="js/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['<span class="color-btn">Web</span> developer',
-      	'<span class="color-btn">SA-MP</span> Programmer'],
-      typeSpeed: 30,
-      backSpeed: 0,
-      fadeOut: true,
-      loop:true
-    });
-  </script>
+<script>
+	var typed = new Typed('#element', {
+		strings: ['<span class="color-btn">Web</span> developer',
+			'<span class="color-btn">SA-MP</span> Programmer'],
+		typeSpeed: 30,
+		backSpeed: 0,
+		fadeOut: true,
+		loop:true
+	});
+	var typed = new Typed('#header', {
+		strings: ["Welcome to ZekyFx's website"],
+		typeSpeed: 50,
+		backSpeed: 0,
+		loop:false
+	});
+</script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
-AOS.init();
+	AOS.init();
 </script>
 </html>
