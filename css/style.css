@@ -57,7 +57,7 @@ p{
 	background-color: #242629;
 }
 .section{
-	height: 100vh;
+	height: 100%;
 	padding: 1rem;
 	background-color: #242629;
 }
@@ -65,6 +65,28 @@ p{
 	text-align: center;
 	font-size: 2rem;
 	margin: 1rem;
+}
+.section__p{
+	width: 100%;
+	text-align: center;
+	order: 1;
+	margin: 1rem 0;
+}
+.about__me__content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	justify-content: space-between;
+
+}
+.about__me__img{
+	aspect-ratio: 9/16;
+	width: 50%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 .projects{
 	margin-top: 2rem;
@@ -99,9 +121,10 @@ p{
 
 .social-icons{
 	display: flex;
-	flex-direction: column;
-	
-	height: 20vh;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 300px;
+	flex-wrap: wrap;
 	gap:2rem;
 	/*background-color: #16161a;*/
 }
@@ -124,6 +147,15 @@ p{
 .color-btn{
 	color: #7f5af0;
 }
+.footer{
+	height: 100vh;
+	padding: 1rem;
+	background-color: #242629;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 .section__title-footer{
 	width: 100%;
 	font-size: 2rem;
@@ -131,7 +163,7 @@ p{
 	margin: 2rem 0;
 }
 
-@media (min-width:700px){
+@media (min-width:600px){
 	.projects{
 		flex-direction: row;
 		gap: 1rem;
@@ -139,6 +171,16 @@ p{
 	.projects__card{
 		width: 400px;
 
+	}
+	.section__p{
+		width: 50%;
+	}
+	.about__me__content{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.about__me__img{
+		max-width: 250px;
 	}
 	.sized{
 		font-size: 3rem;
