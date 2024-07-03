@@ -61,10 +61,15 @@ p{
 	padding: 1rem;
 	background-color: #242629;
 }
+.section-alt{
+	height: 100%;
+	padding: 1rem;
+	/*background-color: #242629;*/
+}
 .section__title{
 	text-align: center;
 	font-size: 2rem;
-	margin: 1rem;
+	margin: 1rem 0;
 }
 .section__p{
 	width: 100%;
@@ -80,6 +85,16 @@ p{
 	gap: 1rem;
 	justify-content: space-between;
 
+}
+.about__me__extra{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	text-align: center;
+	color: #94a1b2;
 }
 .about__me__img{
 	aspect-ratio: 9/16;
@@ -144,6 +159,9 @@ p{
 .sized-img{
 	width: 3rem;
 }
+.sized-img-icon{
+	width: 2rem;
+}
 .color-btn{
 	color: #7f5af0;
 }
@@ -195,4 +213,36 @@ p{
 		flex-direction: row;
 		justify-content: space-around;
 	}
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
