@@ -179,6 +179,9 @@ p{
 .color-btn{
 	color: #7f5af0;
 }
+.color-red{
+	color: #f00;
+}
 .footer{
 	height: 100vh;
 	padding: 1rem;
