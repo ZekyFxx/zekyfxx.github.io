@@ -12,9 +12,17 @@
 </head>
 <body>
 	<header class="header">
-		<h1 id="header" class="header__title"></h1>
-		<h2 id="element" class="header__subtitle"></h2>
 		<img class="header__img" src="img/user.jpg" alt="User Photo" title="Foto de perfil">
+		<div class="header__types size-3">
+			<h1 id="title" class="header__title"></h1>
+			
+		</div>
+		<div class="header__types size-2">
+			<h2 id="subtitle" class="header__subtitle">
+			</h2>			
+		</div>
+
+		
 	</header>
 	<section class="section">
 		<h1 class="section__title">About me</h1>
@@ -41,7 +49,7 @@
 			<br>
 			<h4><strong>Hobby:</strong> Basketball🏀</h4>
 			<br>
-			<h3>Skills:</h2>
+			<h3>Skills:</h3>
 			<br>
 			<span data-aos="flip-right" class="sized" style="color:#fff">
 				<i class="tooltip devicon-html5-plain colored">
@@ -165,16 +173,16 @@
 </body>
 <script src="js/typed.umd.js"></script>
 <script>
-	var typed = new Typed('#element', {
+	var typed = new Typed('#subtitle', {
 		strings: ['<span class="color-btn">Web</span> developer',
 			'<span class="color-btn">SA-MP</span> Programmer',
 			'<span class="color-red">if</span>(canImagine) { <span class="color-btn">create</span>(); }'],
 		typeSpeed: 30,
 		backSpeed: 0,
-		fadeOut: true,
+		fadeOut: false,
 		loop:true
 	});
-	var typed = new Typed('#header', {
+	var typed = new Typed('#title', {
 		strings: ["Welcome to ZekyFx's website"],
 		typeSpeed: 50,
 		backSpeed: 0,
