@@ -12,6 +12,20 @@
 </head>
 <body>
 	<header class="header">
+		<ul class="header__nav">
+			<li>
+				<a title="About me" href="#aboutme"><i class='bx bxs-id-card'></i></a>
+			</li>
+			<li>
+				<a title="Skills" href="#extra"><i class='bx bxs-info-circle'></i></a>
+			</li>
+			<li>
+				<a title="Projects" href="#work"><i class='bx bxs-briefcase'></i></a>
+			</li>
+			<li>
+				<a title="Contact" href="#contact"><i class='bx bxs-message-square-detail'></i></a>
+			</li>
+		</ul>
 		<img class="header__img" src="img/user.jpg" alt="User Photo" title="Foto de perfil">
 		<div class="header__types size-3">
 			<h1 id="title" class="header__title"></h1>
@@ -25,8 +39,8 @@
 
 		
 	</header>
-	<section class="section">
-		<h1 class="section__title">About me</h1>
+	<section id="aboutme" class="section">
+		<h1 class="section__title"><i class='bx bxs-id-card'></i> About me </h1>
 		<div class="about__me__content">
 			<p data-aos="flip-right" class="section__p">
 				My name is <strong>Jesús Lozada</strong>, I'm from Caracas, Venezuela.<br>
@@ -36,13 +50,13 @@
 				<br>
 			</p>
 
-			<img data-aos="zoom-in" src="img/aboutme.jpg" class="about__me__img" alt="My personal photo" title="Real Photo" loading="lazy">			
+			<img  src="img/aboutme.jpg" class="about__me__img" alt="My personal photo" title="Real Photo" loading="lazy">			
 		</div>
 
 
 	</section>
-	<section class="section-alt">
-		<h1 class="section__title">Extra Info & Skills</h1>
+	<section id="extra" class="section-alt">
+		<h1 class="section__title"><i class='bx bxs-info-circle'></i> Extra Info & Skills</h1>
 		<div class="about__me__extra">
 			<h4><strong>Age:</strong> 1️⃣8️⃣</h4>
 			<br>
@@ -63,13 +77,17 @@
 				<i class="tooltip devicon-javascript-plain colored">
 					<span class="tooltiptext">JavaScript</span>
 				</i>
-
+				<i class="tooltip devicon-tailwindcss-original colored" title="Tailwind CSS">
+					<span class="tooltiptext">Tailwind CSS</span>
+				</i>
 				<i class="tooltip devicon-laravel-original colored" title="Laravel">
 					<span class="tooltiptext">Laravel</span>
 				</i>
 				<i class="tooltip devicon-mysql-original colored " title="MySQL">
 					<span class="tooltiptext">MySQL</span>
 				</i>
+
+
 				<span class="tooltip">
 					<img class="sized-img-icon" src="img/pawn-svgrepo-com.svg" alt="Pawn Language">
 					<span class="tooltiptext">Pawn</span>
@@ -78,8 +96,8 @@
 			</span>
 		</div>
 	</section>
-	<section class="section-jobs">
-		<h1 class="section__title">My jobs</h1>
+	<section id="work" class="section-jobs">
+		<h1 class="section__title"><i class='bx bxs-briefcase' ></i> My jobs</h1>
 		<div class="projects">
 			<div data-aos="zoom-in-up" class="projects__card">
 				<img class="projects__card__img" src="img/screenshot-rocks.svg" alt="">
@@ -88,10 +106,18 @@
 					Made with Laravel, Livewire, Tailwind, MySQL<br><br>
 				</p>
 				<div class="projects__card__used">
-					<i class="devicon-laravel-original colored sized" title="Laravel"></i>
-					<i class="devicon-livewire-plain-wordmark colored sized" title="Livewire"></i>
-					<i class="devicon-tailwindcss-original colored sized" title="Tailwind CSS"></i>
-					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
+					<i class="tooltip devicon-laravel-original colored sized" title="Laravel">
+						<span class="tooltiptext">Laravel</span>
+					</i>
+					<i class="tooltip devicon-livewire-plain-wordmark colored sized" title="Livewire">
+						<span class="tooltiptext">Livewire</span>
+					</i>
+					<i class="tooltip devicon-tailwindcss-original colored sized" title="Tailwind CSS">
+						<span class="tooltiptext">Tailwind CSS</span>
+					</i>
+					<i class="tooltip devicon-mysql-original colored sized" title="MySQL">
+						<span class="tooltiptext">MySQL</span>
+					</i>
 
 				</div>
 				<a 
@@ -107,11 +133,18 @@
 				<h1 class="projects__card__title">UCP with Laravel</h1>
 				<p>Made with Laravel, Livewire, Tailwind, MySQL<br><br></p>
 				<div class="projects__card__used">
-					<i class="devicon-laravel-original colored sized" title="Laravel"></i>
-					<i class="devicon-livewire-plain-wordmark colored sized" title="Livewire"></i>
-					<i class="devicon-tailwindcss-original colored sized" title="Tailwind CSS"></i>
-					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
-
+					<i class="tooltip devicon-laravel-original colored sized" title="Laravel">
+						<span class="tooltiptext">Laravel</span>
+					</i>
+					<i class="tooltip devicon-livewire-plain-wordmark colored sized" title="Livewire">
+						<span class="tooltiptext">Livewire</span>
+					</i>
+					<i class="tooltip devicon-tailwindcss-original colored sized" title="Tailwind CSS">
+						<span class="tooltiptext">Tailwind CSS</span>
+					</i>
+					<i class="tooltip devicon-mysql-original colored sized" title="MySQL">
+						<span class="tooltiptext">MySQL</span>
+					</i>
 				</div>
 				<a
 				 target="_blank"
@@ -127,11 +160,18 @@
 					Made with Laravel, Livewire, Tailwind, MySQL<br><br>
 				</p>
 				<div class="projects__card__used">
-					<i class="devicon-laravel-original colored sized" title="Laravel"></i>
-					<i class="devicon-livewire-plain-wordmark colored sized" title="Livewire"></i>
-					<i class="devicon-tailwindcss-original colored sized" title="Tailwind CSS"></i>
-					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
-
+					<i class="tooltip devicon-laravel-original colored sized" title="Laravel">
+						<span class="tooltiptext">Laravel</span>
+					</i>
+					<i class="tooltip devicon-livewire-plain-wordmark colored sized" title="Livewire">
+						<span class="tooltiptext">Livewire</span>
+					</i>
+					<i class="tooltip devicon-tailwindcss-original colored sized" title="Tailwind CSS">
+						<span class="tooltiptext">Tailwind CSS</span>
+					</i>
+					<i class="tooltip devicon-mysql-original colored sized" title="MySQL">
+						<span class="tooltiptext">MySQL</span>
+					</i>
 				</div>
 				<a 
 				href="https://github.com/ZekyFxx/todo-app-laravel"
@@ -146,8 +186,14 @@
 				<h1 class="projects__card__title">Black Bullet (SA-MP)</h1>
 				<p>Open MP server made with Pawn Language and MySQL<br><br></p>
 				<div class="projects__card__used">
-					<img class="sized-img" src="img/pawn-svgrepo-com.svg" alt="Pawn Language">
-					<i class="devicon-mysql-original colored sized" title="MySQL"></i>
+					<span class="tooltip">
+						<img class="sized-img" src="img/pawn-svgrepo-com.svg" alt="Pawn Language">
+						<span class="tooltiptext">Pawn</span>
+					</span>
+					
+					<i class="tooltip devicon-mysql-original colored sized" title="MySQL">
+						<span class="tooltiptext">MySQL</span>
+					</i>
 				</div>
 				<a href="#" class="projects__card__button">
 					Code on GitHub
@@ -157,9 +203,10 @@
 
 		</div>
 	</section>
-	<section class="footer">
+	<section id="contact" class="footer">
 		<h1 data-aos="flip-down" class="section__title-footer">
-		Do you <span class="color-btn">like</span> what you see?
+			<i class='bx bxs-envelope'></i>
+			Contact Section
 		</h1>
 		<h2 data-aos="flip-down">Send me a <span class="color-btn">message</span></h2>
 		<br>

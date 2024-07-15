@@ -52,6 +52,23 @@ p{
 	width: 100%;
 	height: 100vh;
 }
+.header__nav{
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+}
+.header__nav > li{
+	list-style: none;
+}
+.header__nav > li > a{
+	font-size: 2rem;
+	color: var(--p-color);
+	transition: all 0.3s ease;
+}
+.header__nav > li > a:hover{
+	transform: scale(1.2);
+	color: var(--heading-color);
+}
 .header__btn-toggle{
 	position: fixed;
 	z-index: 5;
@@ -138,8 +155,9 @@ p{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
 	justify-content: space-between;
+	gap: 2rem;
+
 
 }
 .about__me__extra{
@@ -157,7 +175,11 @@ p{
 	width: 50%;
 	height: auto;
 	border-radius: 20px;
-	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+.about__me__img:hover{
+	transform: scale(1.1);
 }
 .projects{
 	margin-top: 2rem;
@@ -196,7 +218,7 @@ p{
 .projects__card__button{
 	display: block;
 	background-color: #7f5af0;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	padding: 1rem;
 	border:transparent;
 	border-radius: 20px;
@@ -228,7 +250,7 @@ p{
 	align-items: center;
 }
 .social-icons__icon{
-	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 	border-radius: 18px;
 	border: 1px solid var(--border-color);
 	padding: 1rem;
@@ -275,12 +297,12 @@ p{
 	text-align: center;
 	margin: 2rem 0;
 }
-@media (min-width:370px) and (min-height:700px){
+@media (width >= 370px) and (height >= 700px){
 	.section{
 		height: 100vh;
 	}
 }
-@media (min-width:600px){
+@media (width > 600px){
 	.footer{
 		height: 100vh;
 	}
@@ -329,6 +351,7 @@ p{
 
 /* Tooltip text */
 .tooltip .tooltiptext {
+
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -352,9 +375,25 @@ p{
 }
 
 @media (prefers-color-scheme: light) {
-  // detect OS-configured light-mode and apply rules
+	:root{
+		--heading-color: #0d1b2a;
+		--background-color: #f8f9fa;
+		--p-color: #333;
+		--section-bg: #dee2e6;
+		--card-bg: #eee;
+		--border-color: #5555;
+		--selection-color: #0005;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-  // detect OS-configured dark-mode and apply rules
+	:root{
+		--background-color: #16161a;
+		--heading-color: #fffffe;
+		--p-color: #94a1b2;
+		--section-bg: #242629;
+		--card-bg:#010101;
+		--border-color: #fff5;
+		--selection-color: #ccc5;
+	}
 }
