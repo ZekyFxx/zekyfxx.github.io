@@ -4,6 +4,15 @@
 	
 }
 
+:root{
+	--background-color: #16161a;
+	--heading-color: #fffffe;
+	--p-color: #94a1b2;
+	--section-bg: #242629;
+	--card-bg:#010101;
+	--border-color: #fff5;
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -15,14 +24,22 @@
 }
 
 body{
-	background-color: #16161a;
+	background-color: var(--background-color);
 	font-family: 'Roboto-Mono', sans-serif;
 }
+.toggle{
+	--heading-color: #0d1b2a;
+	--background-color: #f8f9fa;
+	--p-color: #333;
+	--section-bg: #dee2e6;
+	--card-bg: #eee;
+	--border-color: #5555;
+}
 h1,h2,h3,h4,h5{
-	color: #fffffe;
+	color: var(--heading-color);
 }
 p{
-	color: #94a1b2;
+	color: var(--p-color);
 }
 .header{
 	display: flex;
@@ -33,9 +50,24 @@ p{
 	width: 100%;
 	height: 100vh;
 }
+.header__btn-toggle{
+	position: fixed;
+	width: fit-content;
+	top: 5px;
+	left: 5px;
+	right: 0;
+	font-size: 2rem;
+	color: var(--p-color);
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 100%;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
+}
 .header__types{
 	display: inline-block;
 	height: auto;
+	color: var(--heading-color);
 	text-align: center;
 }
 .header__types.size-2{
@@ -64,7 +96,7 @@ p{
 	aspect-ratio: 1/1;
 	width: 100px;
 	border-radius: 100%;
-	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 	pointer-events: none;
 	user-select: none;
 }
@@ -72,12 +104,12 @@ p{
 .section-jobs{
 	height: 100%;
 	padding: 1rem;
-	background-color: #242629;
+	background-color: var(--section-bg);
 }
 .section{
 	height: 100%;
 	padding: 1rem;
-	background-color: #242629;
+	background-color: var(--section-bg);
 }
 .section-alt{
 	height: 100%;
@@ -131,9 +163,9 @@ p{
 }
 .projects__card{
 	text-align: center;
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
 	padding: 1rem;
-	background-color: #010101;
+	background-color: var(--card-bg);
 	width: 400px;
 }
 .projects__card__img{
@@ -166,7 +198,7 @@ p{
 	color: #fffffe;
 	font-size: 1rem;
 	text-decoration: none;
-	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons{
@@ -190,14 +222,15 @@ p{
 	align-items: center;
 }
 .social-icons__icon{
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 	border-radius: 18px;
-	border: 1px solid #fff;
+	border: 1px solid var(--border-color);
 	padding: 1rem;
 	width: 300px;
 	transition: all 0.3s ease;
 }
 .social-icons__icon:hover{
-	background-color: #16161a;
+	background-color: var(--background-color);
 	transform: scale(1.1);
 }
 .social-icons-black{
@@ -224,7 +257,7 @@ p{
 .footer{
 	height: 100%;
 	padding: 1rem;
-	background-color: #242629;
+	background-color: var(--section-bg);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -310,4 +343,12 @@ p{
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+@media (prefers-color-scheme: light) {
+  // detect OS-configured light-mode and apply rules
+}
+
+@media (prefers-color-scheme: dark) {
+  // detect OS-configured dark-mode and apply rules
 }
