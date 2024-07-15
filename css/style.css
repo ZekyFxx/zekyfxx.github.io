@@ -58,9 +58,10 @@ p{
 	gap: 1rem;
 }
 .header__nav > li{
-	list-style: none;
+	
 }
 .header__nav > li > a{
+	display: inline-block;
 	font-size: 2rem;
 	color: var(--p-color);
 	transition: all 0.3s ease;
