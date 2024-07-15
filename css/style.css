@@ -11,6 +11,7 @@
 	--section-bg: #242629;
 	--card-bg:#010101;
 	--border-color: #fff5;
+	--selection-color: #ccc5;
 }
 
 *{
@@ -20,7 +21,7 @@
 }
 
 ::selection{
-	background-color: #ccc5;
+	background-color: var(--selection-color);
 }
 
 body{
@@ -34,6 +35,7 @@ body{
 	--section-bg: #dee2e6;
 	--card-bg: #eee;
 	--border-color: #5555;
+	--selection-color: #0005;
 }
 h1,h2,h3,h4,h5{
 	color: var(--heading-color);
@@ -52,6 +54,7 @@ p{
 }
 .header__btn-toggle{
 	position: fixed;
+	z-index: 5;
 	width: fit-content;
 	top: 5px;
 	left: 5px;
@@ -62,7 +65,10 @@ p{
 	cursor: pointer;
 	border-radius: 100%;
 	border: 1px solid transparent;
-	transition: all 0.3s ease;
+	transition: all 0.2s ease;
+}
+.header__btn-toggle:hover{
+	transform: scale(1.1);
 }
 .header__types{
 	display: inline-block;
@@ -151,7 +157,7 @@ p{
 	width: 50%;
 	height: auto;
 	border-radius: 20px;
-	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
 }
 .projects{
 	margin-top: 2rem;
