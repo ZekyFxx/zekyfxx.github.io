@@ -5,13 +5,15 @@
 }
 
 :root{
-	--background-color: #16161a;
+	--background-color: #00f;
 	--heading-color: #fffffe;
 	--p-color: #94a1b2;
 	--section-bg: #242629;
 	--card-bg:#010101;
 	--border-color: #fff5;
 	--selection-color: #ccc5;
+	--color-btn: rgb(14 165 233);
+	--color-btn-alt: #010101;
 }
 
 *{
@@ -218,7 +220,7 @@ p{
 }
 .projects__card__button{
 	display: block;
-	background-color: #7f5af0;
+	background-color: var(--color-btn);
 	margin-top: 2rem;
 	padding: 1rem;
 	border:transparent;
@@ -229,7 +231,19 @@ p{
 	text-decoration: none;
 	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
-
+.projects__card__button-alt{
+	display: block;
+	background-color: var(--color-btn-alt);
+	margin-top: 1rem;
+	padding: 1rem;
+	border:transparent;
+	border-radius: 20px;
+	cursor: pointer;
+	color: #fffffe;
+	font-size: 1rem;
+	text-decoration: none;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);	
+}
 .social-icons{
 	margin: 1rem;
 	display: flex;
@@ -278,7 +292,7 @@ p{
 	height: auto;
 }
 .color-btn{
-	color: #7f5af0;
+	color: var(--color-btn);
 }
 .color-red{
 	color: #f00;
@@ -389,11 +403,11 @@ p{
 
 @media (prefers-color-scheme: dark) {
 	:root{
-		--background-color: #16161a;
+		--background-color: #222831;
 		--heading-color: #fffffe;
 		--p-color: #94a1b2;
-		--section-bg: #242629;
-		--card-bg:#010101;
+		--section-bg: #31363f;
+		--card-bg:#223;
 		--border-color: #fff5;
 		--selection-color: #ccc5;
 	}
