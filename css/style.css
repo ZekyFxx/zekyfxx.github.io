@@ -122,7 +122,7 @@ p{
 	aspect-ratio: 1/1;
 	width: 100px;
 	border-radius: 100%;
-	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
 	pointer-events: none;
 	user-select: none;
 }
@@ -194,19 +194,20 @@ p{
 }
 .projects__card{
 	text-align: center;
-	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
-	padding: 1rem;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 	background-color: var(--card-bg);
 	width: 400px;
+	border:none;
+	border-radius: 14px;
 }
 .projects__card__img{
+	border-top-right-radius: 14px;
+	border-top-left-radius: 14px;
 	max-width: 100%;
 	height: auto;
-	border-radius: 20px;
 	transition: all 0.3s ease;
 }
 .projects__card__img:hover{
-	transform: scale(1.05);
 }
 .projects__card__title{
 
@@ -218,10 +219,30 @@ p{
 	justify-content: center;
 	gap: 1rem;
 }
+.skills{
+	width: 100%;
+}
+.skills__wrapper{
+	margin: 1rem 0;
+}
+.skills__wrapper h3{
+	padding: 1rem;
+}
+.skills__icon{
+	margin: .5rem 0;
+	box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+	background-color: #0d1b2a;
+	border-radius: 14px;
+	padding: 1rem;
+	transition: all 0.3s ease;
+}
+.skills__icon:hover{
+	transform: scale(1.1);
+}
 .projects__card__button{
 	display: block;
 	background-color: var(--color-btn);
-	margin-top: 2rem;
+	margin: 2rem 1rem 1rem;
 	padding: 1rem;
 	border:transparent;
 	border-radius: 20px;
@@ -234,7 +255,7 @@ p{
 .projects__card__button-alt{
 	display: block;
 	background-color: var(--color-btn-alt);
-	margin-top: 1rem;
+	margin: 1rem 1rem 1rem;
 	padding: 1rem;
 	border:transparent;
 	border-radius: 20px;
@@ -265,15 +286,16 @@ p{
 	align-items: center;
 }
 .social-icons__icon{
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 18px;
-	border: 1px solid var(--border-color);
+	background-color: #0d1b2a;
+	border: none;
 	padding: 1rem;
 	width: 300px;
 	transition: all 0.3s ease;
 }
 .social-icons__icon:hover{
-	background-color: var(--background-color);
+	background-color: #1d2b3a;	
 	transform: scale(1.1);
 }
 .social-icons-black{
@@ -372,7 +394,7 @@ p{
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   border-radius: 6px;
   font-size: 1rem;
   font-family: sans-serif;
@@ -380,6 +402,7 @@ p{
   position: absolute;
   bottom: 100%;
   left: 50%;
+  margin-bottom: 5px;
   margin-left: -60px;
   z-index: 1;
 }
