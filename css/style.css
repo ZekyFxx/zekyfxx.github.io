@@ -163,6 +163,21 @@ p{
 
 
 }
+
+.about__me__content__btn{
+	display: block;
+	width: auto;
+	letter-spacing: 1px;
+	padding: 1rem 1rem;
+	background-color: #0d1b2a;
+	color: var(--heading-color);
+	border: none;
+	border-radius: 14px;
+	cursor: pointer;
+	margin: auto;
+	text-decoration: none;
+}
+
 .about__me__extra{
 	height: 100vh;
 	display: flex;
@@ -284,6 +299,7 @@ p{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
 }
 .social-icons__icon{
 	box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
@@ -291,7 +307,7 @@ p{
 	background-color: #0d1b2a;
 	border: none;
 	padding: 1rem;
-	width: 300px;
+	width: fit-content;
 	transition: all 0.3s ease;
 }
 .social-icons__icon:hover{
@@ -320,7 +336,7 @@ p{
 	color: #f00;
 }
 .footer{
-	height: 100%;
+	height: 100vh;
 	padding: 1rem;
 	background-color: var(--section-bg);
 	display: flex;
