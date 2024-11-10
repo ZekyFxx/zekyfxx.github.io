@@ -6,6 +6,7 @@
 
 :root{
 	--background-color: #00f;
+	--background-color-alt: #262626;
 	--heading-color: #fffffe;
 	--p-color: #94a1b2;
 	--section-bg: #242629;
@@ -33,9 +34,10 @@ body{
 .toggle{
 	--heading-color: #0d1b2a;
 	--background-color: #f8f9fa;
+	--background-color-alt: #b7c2ce;
 	--p-color: #333;
 	--section-bg: #dee2e6;
-	--card-bg: #eee;
+	--card-bg: #e1e8ef;
 	--border-color: #5555;
 	--selection-color: #0005;
 }
@@ -130,7 +132,7 @@ p{
 .section-jobs{
 	height: 100%;
 	padding: 1rem;
-	background-color: var(--section-bg);
+	background-color: var(--background-color);
 }
 .section{
 	height: 100%;
@@ -144,7 +146,7 @@ p{
 }
 .section__title{
 	text-align: center;
-	font-size: 1rem;
+	font-size: 2rem;
 	padding: 1rem 0;
 }
 .section__p{
@@ -183,15 +185,7 @@ p{
 	text-decoration: none;
 }
 
-.about__me__extra{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-	text-align: center;
-	color: #94a1b2;
-}
+
 .about__me__img{
 	order: 1;
 	aspect-ratio: 9/16;
@@ -239,15 +233,28 @@ p{
 	justify-content: center;
 	gap: 1rem;
 }
+.about__me__extra{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	text-align: center;
+	color: #94a1b2;
+}
+.about__me__extra__p{
+	width: 100%;
+
+}
 .skills{
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
 .skills__wrapper{
+	width: 100%;
 	margin: 1rem 0;
 	padding: 1rem;
-	background-color: #0d1b2a;
 	border-radius: 14px;
 }
 .skills__wrapper h3{
@@ -315,7 +322,7 @@ p{
 .social-icons__icon{
 	box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 18px;
-	background-color: #0d1b2a;
+	background-color: #262626;
 	border: none;
 	padding: 1rem;
 	width: fit-content;
@@ -390,13 +397,18 @@ p{
 	.about__me__extra{
 		height: 100vh;
 	}
-}
-@media (width > 600px){
 	.about__me__content__btn{
 		width: 200px;
 	}
+}
+@media (width > 620px){
+
+	.about__me__extra{
+		flex-direction: row;
+	}
+
 	.skills__wrapper{
-		width: 50%;
+		width: 100%;
 	}
 	.footer{
 		height: 100vh;
@@ -413,8 +425,10 @@ p{
 		width: 50%;
 	}
 	.about__me__content{
+		width: 80%;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: center;
+		margin: auto;
 	}
 	.about__me__img{
 		max-width: 250px;
@@ -474,6 +488,7 @@ p{
 	:root{
 		--heading-color: #0d1b2a;
 		--background-color: #f8f9fa;
+		--background-color-alt: #fff;
 		--p-color: #333;
 		--section-bg: #dee2e6;
 		--card-bg: #eee;
@@ -485,6 +500,7 @@ p{
 @media (prefers-color-scheme: dark) {
 	:root{
 		--background-color: #222831;
+		--background-color-alt: #0d1b2a;
 		--heading-color: #fffffe;
 		--p-color: #94a1b2;
 		--section-bg: #31363f;
