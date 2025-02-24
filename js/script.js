@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 		document.body.classList.remove('toggle');
 		localStorage.setItem('light', 0);
 		btn.innerHTML = `<i class="bx bx-sun"></i>`;
+		
 	}
 });
 
